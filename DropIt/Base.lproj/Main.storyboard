@@ -1,25 +1,161 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wzH-Hn-TmI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--QuickDrop!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="bottom" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O2-Vn-hnH">
+                                <rect key="frame" x="0.0" y="496" width="600" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="vps-zt-DWb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="DropIt!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LeX-cO-PfX"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oMg-WC-hkZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="496"/>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2O2-Vn-hnH" secondAttribute="bottom" id="3Pm-Qm-5JP"/>
+                            <constraint firstItem="oMg-WC-hkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fbi-R3-PMd"/>
+                            <constraint firstItem="2O2-Vn-hnH" firstAttribute="top" secondItem="oMg-WC-hkZ" secondAttribute="bottom" id="IKq-pP-gVa"/>
+                            <constraint firstItem="2O2-Vn-hnH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cIq-qg-Ifh"/>
+                            <constraint firstItem="oMg-WC-hkZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fDB-GD-Bb1"/>
+                            <constraint firstAttribute="trailing" secondItem="oMg-WC-hkZ" secondAttribute="trailing" id="rza-5K-bfo"/>
+                            <constraint firstAttribute="trailing" secondItem="2O2-Vn-hnH" secondAttribute="trailing" id="sMG-hi-eOl"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="QuickDrop!" id="hae-eO-DHe"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="map" destination="oMg-WC-hkZ" id="pDG-PS-iTt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1066" y="381"/>
+        </scene>
+        <!--Custom DropIt-->
+        <scene sceneID="f1b-u2-TeB">
+            <objects>
+                <viewController title="Custom DropIt" id="Kml-4B-XEN" customClass="PhotoViewController" customModule="DropIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hPE-Nu-eDE"/>
+                        <viewControllerLayoutGuide type="bottom" id="C5W-OC-PlW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Syz-RD-etL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnv-B7-IyY">
+                                <rect key="frame" x="0.0" y="496" width="600" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="mMa-Jx-iQg"/>
+                                    <constraint firstAttribute="height" constant="55" id="wH4-zW-tUh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="Drop Custom DropIt!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRQ-v3-Vdr"/>
+                                    <action selector="dropCustom:" destination="Kml-4B-XEN" eventType="touchUpInside" id="UOo-Gx-JNQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your summary here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rX9-WV-K2X">
+                                <rect key="frame" x="0.0" y="441" width="600" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="nDl-xB-VXO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSh-9u-xuD">
+                                <rect key="frame" x="0.0" y="386" width="600" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="PI1-2r-McA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="Kml-4B-XEN" eventType="touchUpInside" id="Ipu-ro-fdx"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SrV-93-eTW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="386"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rX9-WV-K2X" firstAttribute="leading" secondItem="Syz-RD-etL" secondAttribute="leading" id="6my-J0-ic6"/>
+                            <constraint firstAttribute="trailing" secondItem="SrV-93-eTW" secondAttribute="trailing" id="B8y-wE-29Z"/>
+                            <constraint firstItem="wSh-9u-xuD" firstAttribute="top" secondItem="SrV-93-eTW" secondAttribute="bottom" id="G8I-gE-wpJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Wnv-B7-IyY" secondAttribute="trailing" id="Ne2-ti-H9o"/>
+                            <constraint firstItem="SrV-93-eTW" firstAttribute="leading" secondItem="Syz-RD-etL" secondAttribute="leading" id="Tvk-wS-nfj"/>
+                            <constraint firstAttribute="trailing" secondItem="wSh-9u-xuD" secondAttribute="trailing" id="ayg-Pf-yLj"/>
+                            <constraint firstItem="wSh-9u-xuD" firstAttribute="leading" secondItem="Syz-RD-etL" secondAttribute="leading" id="b67-LU-TTw"/>
+                            <constraint firstItem="Wnv-B7-IyY" firstAttribute="leading" secondItem="Syz-RD-etL" secondAttribute="leading" id="bDs-fl-dhN"/>
+                            <constraint firstItem="rX9-WV-K2X" firstAttribute="top" secondItem="wSh-9u-xuD" secondAttribute="bottom" id="cHO-Ws-qgU"/>
+                            <constraint firstItem="SrV-93-eTW" firstAttribute="top" secondItem="Syz-RD-etL" secondAttribute="topMargin" id="faJ-o7-CWa"/>
+                            <constraint firstItem="C5W-OC-PlW" firstAttribute="top" secondItem="Wnv-B7-IyY" secondAttribute="bottom" id="ies-Ii-9fH"/>
+                            <constraint firstItem="Wnv-B7-IyY" firstAttribute="top" secondItem="rX9-WV-K2X" secondAttribute="bottom" id="wFx-X8-LV1"/>
+                            <constraint firstAttribute="trailing" secondItem="rX9-WV-K2X" secondAttribute="trailing" id="y5Q-S8-ojh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drop Custom DropIt!" id="Rwq-At-G8S"/>
+                    <connections>
+                        <outlet property="customPinDrop" destination="Wnv-B7-IyY" id="bb7-3h-qOd"/>
+                        <outlet property="map" destination="SrV-93-eTW" id="BPI-Gk-yfD"/>
+                        <outlet property="summaryTextField" destination="rX9-WV-K2X" id="Tlx-6M-ZMG"/>
+                        <outlet property="takePhoto" destination="wSh-9u-xuD" id="Arf-vm-BkJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7h8-9E-YmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="1065"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Eh8-br-fFT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wzH-Hn-TmI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="yGq-PG-jai">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="me9-f5-Olg"/>
+                        <segue destination="Kml-4B-XEN" kind="relationship" relationship="viewControllers" id="i25-lY-Oqg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzG-fv-yml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="809"/>
         </scene>
     </scenes>
 </document>

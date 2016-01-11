@@ -7,48 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E52041BB79C8C002489C5 /* Azure.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E52031BB79C8C002489C5 /* Azure.m */; settings = {ASSET_TAGS = (); }; };
+		180E52091BB7B1E3002489C5 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E52081BB7B1E3002489C5 /* WindowsAzureMobileServices.framework */; settings = {ASSET_TAGS = (); }; };
+		180E52121BB7B62A002489C5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180E52101BB7B62A002489C5 /* Interface.storyboard */; };
+		180E52141BB7B62A002489C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180E52131BB7B62A002489C5 /* Assets.xcassets */; };
+		180E521B1BB7B62A002489C5 /* WatchItDrop Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 180E521A1BB7B62A002489C5 /* WatchItDrop Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		180E52221BB7B62A002489C5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E52211BB7B62A002489C5 /* InterfaceController.swift */; };
+		180E52241BB7B62A002489C5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E52231BB7B62A002489C5 /* ExtensionDelegate.swift */; };
+		180E52261BB7B62A002489C5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E52251BB7B62A002489C5 /* NotificationController.swift */; };
+		180E52281BB7B62A002489C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180E52271BB7B62A002489C5 /* Assets.xcassets */; };
+		180E522C1BB7B62A002489C5 /* WatchItDrop.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 180E520E1BB7B62A002489C5 /* WatchItDrop.app */; };
 		1846C24D1BB6D64500C86F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846C24C1BB6D64500C86F27 /* AppDelegate.swift */; };
 		1846C24F1BB6D64500C86F27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1846C24E1BB6D64500C86F27 /* ViewController.swift */; };
 		1846C2521BB6D64500C86F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1846C2501BB6D64500C86F27 /* Main.storyboard */; };
-		1846C2541BB6D64500C86F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1846C2531BB6D64500C86F27 /* Assets.xcassets */; };
 		1846C2571BB6D64500C86F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1846C2551BB6D64500C86F27 /* LaunchScreen.storyboard */; };
+		1846C2611BB7185B00C86F27 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1846C2601BB7185B00C86F27 /* Images-2.xcassets */; settings = {ASSET_TAGS = (); }; };
+		185596F01BB7608F00C46802 /* PhotoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185596EF1BB7608F00C46802 /* PhotoPoint.swift */; settings = {ASSET_TAGS = (); }; };
+		185596F21BB7689400C46802 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185596F11BB7689400C46802 /* PhotoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		180E521C1BB7B62A002489C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1846C2411BB6D64500C86F27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180E52191BB7B62A002489C5;
+			remoteInfo = "WatchItDrop Extension";
+		};
+		180E522A1BB7B62A002489C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1846C2411BB6D64500C86F27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180E520D1BB7B62A002489C5;
+			remoteInfo = WatchItDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		180E52301BB7B62B002489C5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				180E521B1BB7B62A002489C5 /* WatchItDrop Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E52341BB7B62B002489C5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				180E522C1BB7B62A002489C5 /* WatchItDrop.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1846C2491BB6D64500C86F27 /* DropIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180E52021BB79C8B002489C5 /* DropIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DropIt-Bridging-Header.h"; sourceTree = "<group>"; };
+		180E52031BB79C8C002489C5 /* Azure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Azure.m; path = DropIt/Azure.m; sourceTree = "<group>"; };
+		180E52081BB7B1E3002489C5 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		180E520A1BB7B1E3002489C5 /* DropIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180E520E1BB7B62A002489C5 /* WatchItDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchItDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180E52111BB7B62A002489C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		180E52131BB7B62A002489C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180E52151BB7B62A002489C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180E521A1BB7B62A002489C5 /* WatchItDrop Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchItDrop Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180E52201BB7B62A002489C5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		180E52211BB7B62A002489C5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		180E52231BB7B62A002489C5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		180E52251BB7B62A002489C5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		180E52271BB7B62A002489C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180E52291BB7B62A002489C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1846C24C1BB6D64500C86F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1846C24E1BB6D64500C86F27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1846C2511BB6D64500C86F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1846C2531BB6D64500C86F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1846C2561BB6D64500C86F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1846C2581BB6D64500C86F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1846C2601BB7185B00C86F27 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		185596EF1BB7608F00C46802 /* PhotoPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPoint.swift; sourceTree = "<group>"; };
+		185596F11BB7689400C46802 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1846C2461BB6D64500C86F27 /* Frameworks */ = {
+		180E52171BB7B62A002489C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1846C2461BB6D64500C86F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E52091BB7B1E3002489C5 /* WindowsAzureMobileServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180E520B1BB7B2FC002489C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180E52081BB7B1E3002489C5 /* WindowsAzureMobileServices.framework */,
+			);
+			name = Frameworks;
+			path = DropIt;
+			sourceTree = "<group>";
+		};
+		180E520F1BB7B62A002489C5 /* WatchItDrop */ = {
+			isa = PBXGroup;
+			children = (
+				180E52101BB7B62A002489C5 /* Interface.storyboard */,
+				180E52131BB7B62A002489C5 /* Assets.xcassets */,
+				180E52151BB7B62A002489C5 /* Info.plist */,
+			);
+			path = WatchItDrop;
+			sourceTree = "<group>";
+		};
+		180E521E1BB7B62A002489C5 /* WatchItDrop Extension */ = {
+			isa = PBXGroup;
+			children = (
+				180E52211BB7B62A002489C5 /* InterfaceController.swift */,
+				180E52231BB7B62A002489C5 /* ExtensionDelegate.swift */,
+				180E52251BB7B62A002489C5 /* NotificationController.swift */,
+				180E52271BB7B62A002489C5 /* Assets.xcassets */,
+				180E52291BB7B62A002489C5 /* Info.plist */,
+				180E521F1BB7B62A002489C5 /* Supporting Files */,
+			);
+			path = "WatchItDrop Extension";
+			sourceTree = "<group>";
+		};
+		180E521F1BB7B62A002489C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				180E52201BB7B62A002489C5 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1846C2401BB6D64500C86F27 = {
 			isa = PBXGroup;
 			children = (
+				180E52031BB79C8C002489C5 /* Azure.m */,
 				1846C24B1BB6D64500C86F27 /* DropIt */,
-				1846C24A1BB6D64500C86F27 /* Products */,
+				180E52021BB79C8B002489C5 /* DropIt-Bridging-Header.h */,
+				180E520A1BB7B1E3002489C5 /* DropIt.app */,
+				180E520F1BB7B62A002489C5 /* WatchItDrop */,
+				180E521E1BB7B62A002489C5 /* WatchItDrop Extension */,
+				180E520B1BB7B2FC002489C5 /* Frameworks */,
+				180E520E1BB7B62A002489C5 /* WatchItDrop.app */,
+				180E521A1BB7B62A002489C5 /* WatchItDrop Extension.appex */,
 			);
-			sourceTree = "<group>";
-		};
-		1846C24A1BB6D64500C86F27 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1846C2491BB6D64500C86F27 /* DropIt.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1846C24B1BB6D64500C86F27 /* DropIt */ = {
@@ -57,9 +174,11 @@
 				1846C24C1BB6D64500C86F27 /* AppDelegate.swift */,
 				1846C24E1BB6D64500C86F27 /* ViewController.swift */,
 				1846C2501BB6D64500C86F27 /* Main.storyboard */,
-				1846C2531BB6D64500C86F27 /* Assets.xcassets */,
+				185596F11BB7689400C46802 /* PhotoViewController.swift */,
 				1846C2551BB6D64500C86F27 /* LaunchScreen.storyboard */,
 				1846C2581BB6D64500C86F27 /* Info.plist */,
+				185596EF1BB7608F00C46802 /* PhotoPoint.swift */,
+				1846C2601BB7185B00C86F27 /* Images-2.xcassets */,
 			);
 			path = DropIt;
 			sourceTree = "<group>";
@@ -67,6 +186,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		180E520D1BB7B62A002489C5 /* WatchItDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180E52311BB7B62B002489C5 /* Build configuration list for PBXNativeTarget "WatchItDrop" */;
+			buildPhases = (
+				180E520C1BB7B62A002489C5 /* Resources */,
+				180E52301BB7B62B002489C5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180E521D1BB7B62A002489C5 /* PBXTargetDependency */,
+			);
+			name = WatchItDrop;
+			productName = WatchItDrop;
+			productReference = 180E520E1BB7B62A002489C5 /* WatchItDrop.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		180E52191BB7B62A002489C5 /* WatchItDrop Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180E522D1BB7B62B002489C5 /* Build configuration list for PBXNativeTarget "WatchItDrop Extension" */;
+			buildPhases = (
+				180E52161BB7B62A002489C5 /* Sources */,
+				180E52171BB7B62A002489C5 /* Frameworks */,
+				180E52181BB7B62A002489C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchItDrop Extension";
+			productName = "WatchItDrop Extension";
+			productReference = 180E521A1BB7B62A002489C5 /* WatchItDrop Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		1846C2481BB6D64500C86F27 /* DropIt */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1846C25B1BB6D64500C86F27 /* Build configuration list for PBXNativeTarget "DropIt" */;
@@ -74,14 +227,16 @@
 				1846C2451BB6D64500C86F27 /* Sources */,
 				1846C2461BB6D64500C86F27 /* Frameworks */,
 				1846C2471BB6D64500C86F27 /* Resources */,
+				180E52341BB7B62B002489C5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				180E522B1BB7B62A002489C5 /* PBXTargetDependency */,
 			);
 			name = DropIt;
 			productName = DropIt;
-			productReference = 1846C2491BB6D64500C86F27 /* DropIt.app */;
+			productReference = 180E520A1BB7B1E3002489C5 /* DropIt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -90,11 +245,21 @@
 		1846C2411BB6D64500C86F27 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DropItLikeItsHot;
 				TargetAttributes = {
+					180E520D1BB7B62A002489C5 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 56GQX6L76H;
+					};
+					180E52191BB7B62A002489C5 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 56GQX6L76H;
+					};
 					1846C2481BB6D64500C86F27 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 56GQX6L76H;
 					};
 				};
 			};
@@ -107,22 +272,41 @@
 				Base,
 			);
 			mainGroup = 1846C2401BB6D64500C86F27;
-			productRefGroup = 1846C24A1BB6D64500C86F27 /* Products */;
+			productRefGroup = 1846C2401BB6D64500C86F27;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1846C2481BB6D64500C86F27 /* DropIt */,
+				180E520D1BB7B62A002489C5 /* WatchItDrop */,
+				180E52191BB7B62A002489C5 /* WatchItDrop Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		180E520C1BB7B62A002489C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E52141BB7B62A002489C5 /* Assets.xcassets in Resources */,
+				180E52121BB7B62A002489C5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180E52181BB7B62A002489C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E52281BB7B62A002489C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1846C2471BB6D64500C86F27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1846C2611BB7185B00C86F27 /* Images-2.xcassets in Resources */,
 				1846C2571BB6D64500C86F27 /* LaunchScreen.storyboard in Resources */,
-				1846C2541BB6D64500C86F27 /* Assets.xcassets in Resources */,
 				1846C2521BB6D64500C86F27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,18 +314,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		180E52161BB7B62A002489C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180E52261BB7B62A002489C5 /* NotificationController.swift in Sources */,
+				180E52241BB7B62A002489C5 /* ExtensionDelegate.swift in Sources */,
+				180E52221BB7B62A002489C5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1846C2451BB6D64500C86F27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1846C24F1BB6D64500C86F27 /* ViewController.swift in Sources */,
+				185596F21BB7689400C46802 /* PhotoViewController.swift in Sources */,
+				180E52041BB79C8C002489C5 /* Azure.m in Sources */,
 				1846C24D1BB6D64500C86F27 /* AppDelegate.swift in Sources */,
+				185596F01BB7608F00C46802 /* PhotoPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		180E521D1BB7B62A002489C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180E52191BB7B62A002489C5 /* WatchItDrop Extension */;
+			targetProxy = 180E521C1BB7B62A002489C5 /* PBXContainerItemProxy */;
+		};
+		180E522B1BB7B62A002489C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180E520D1BB7B62A002489C5 /* WatchItDrop */;
+			targetProxy = 180E522A1BB7B62A002489C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		180E52101BB7B62A002489C5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180E52111BB7B62A002489C5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		1846C2501BB6D64500C86F27 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -161,6 +379,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		180E522E1BB7B62B002489C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchItDrop Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dropitlikeitshot.DropIt.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		180E522F1BB7B62B002489C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchItDrop Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dropitlikeitshot.DropIt.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		180E52321BB7B62B002489C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchItDrop_Extension;
+				INFOPLIST_FILE = WatchItDrop/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dropitlikeitshot.DropIt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		180E52331BB7B62B002489C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchItDrop_Extension;
+				INFOPLIST_FILE = WatchItDrop/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dropitlikeitshot.DropIt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		1846C2591BB6D64500C86F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -248,10 +530,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DropIt",
+				);
 				INFOPLIST_FILE = DropIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dropitlikeitshot.DropIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DropIt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -259,16 +552,42 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DropIt",
+				);
 				INFOPLIST_FILE = DropIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dropitlikeitshot.DropIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DropIt-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		180E522D1BB7B62B002489C5 /* Build configuration list for PBXNativeTarget "WatchItDrop Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180E522E1BB7B62B002489C5 /* Debug */,
+				180E522F1BB7B62B002489C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		180E52311BB7B62B002489C5 /* Build configuration list for PBXNativeTarget "WatchItDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180E52321BB7B62B002489C5 /* Debug */,
+				180E52331BB7B62B002489C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1846C2441BB6D64500C86F27 /* Build configuration list for PBXProject "DropIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -285,6 +604,7 @@
 				1846C25D1BB6D64500C86F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
